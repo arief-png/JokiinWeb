@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    #menu-toggle.active svg {
+      transform: rotate(90deg); 
+     
+    }
+    #menu-toggle svg {
+      transition: transform 0.3s ease-in-out; 
+    }
+  </style>
+  <title>Jokiin - Joki Tugas Terpercaya</title>
+</head>
+<body class="bg-white text-gray-800"> 
+<!-- Loading Screen -->
+<div id="loadingScreen" class="fixed inset-0 z-[9999] bg-white flex items-center justify-center transition-opacity duration-500">
+  <div class="flex flex-row gap-2">
+    <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce"></div>
+    <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.3s]"></div>
+    <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.5s]"></div>
+  </div>
+</div>
+
+  <header class="absolute top-0 left-0 right-0 z-10 bg-transparent">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6 md:px-16">
+    <a href="https://www.instagram.com/ackerman.js/"><img class="w-24" src="JokiinPng.png" alt="logo"></a>
+
+    <button id="menu-toggle" class="md:hidden text-white focus:outline-none relative z-20">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+    </button>
+
+    <nav id="nav-menu" class="fixed top-0 right-0 h-full w-[70%] max-w-xs bg-black text-white flex flex-col items-start justify-center 
+space-y-10 p-10 pt-20  
+transform translate-x-full opacity-0 invisible transition-all duration-500 ease-in-out z-30
+md:static md:flex md:flex-row md:justify-end md:w-auto md:h-auto md:space-y-0 md:space-x-10 md:p-0
+md:transform-none md:opacity-100 md:visible md:overflow-visible md:bg-transparent">
+
+      <a href="#layanan" class=" hover:text-blue-400 block transition-colors duration-200">Layanan </a>
+      <a href="#portfolio" class="hover:text-blue-400 block transition-colors duration-200 ">Kategori </a>
+      <a href="#harga" class=" hover:text-blue-400 block transition-colors duration-200">Harga</a>
+      <a href="#pesan" class=" hover:text-blue-400 block transition-colors duration-200">Pemesanan</a>
+    </nav>
+
+    <div class="hidden md:flex items-center gap-4">
+      <button class="bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-800">
+        Joki in
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<section class="relative h-screen" id="home">
+    <img src="upscalemedia-transformed.jpeg" alt="Banner" class="w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black/40 flex flex-col justify-center">
+      <div class="container mx-auto px-6 md:px-16 text-white text-center md:text-left">
+        <span class="text-sm uppercase font-semibold mb-2">Solusi Tugas Sekolahmu</span>
+        <h2 class="text-4xl md:text-6xl font-bold max-w-3xl">
+          Jokiin: Joki Tugas SMP, SMA Terbaik — Cepat, Rapi, Terpercaya!
+        </h2>
+        <p class="mt-4 max-w-2xl text-gray-200">
+          Dari desain kreatif, makalah lengkap, hingga website impian. Kami siap bantu kamu selesaikan tugas-tugas dengan mudah dan hasil maksimal!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white" id="layanan">
+  <div class="container mx-auto px-6 md:px-16">
+    <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+      <div class="md:w-1/2">
+        <h3 class="text-4xl font-bold text-gray-800 mb-6">Kenapa Pilih Jokiin untuk Tugasmu?</h3>
+        <p class="text-gray-700 text-lg mb-4">Bingung dengan tumpukan tugas? Deadline mepet? Jangan khawatir! Jokiin hadir sebagai solusi joki tugas terpercaya untuk pelajar SMP dan SMA.</p>
+        <p class="text-gray-700 text-lg mb-6">Kami menyediakan layanan joki tugas lengkap mulai dari desain (banner, poster, logo, baju), pengerjaan makalah, hingga pembuatan frontend website. Semua dikerjakan dengan kualitas terbaik!</p>
+        <a href="#layanan-detail" class="inline-block mt-4 bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-full transition duration-300">
+          Lihat Layanan Kami
+        </a>
+      </div>
+      <div class="md:w-1/2">
+        <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+          <video class="w-full h-full rounded-lg" src="1536315-hd_1920_1080_30fps.mp4" autoplay muted loop playsinline></video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </section>
+
+  <section class="bg-white text-white py-24" id="portfolio">
+  <div class="container mx-auto px-6 md:px-16">
+    <h3 class="text-4xl font-bold mb-12 text-center text-black">Kategori Joki Kami</h3>
+      <p class="text-gray-600 text-center mb-16 max-w-3xl mx-auto text-lg">
+      Kami menyediakan berbagai layanan joki tugas yang dirancang khusus untuk pelajar SMP dan SMA. Setiap layanan dikerjakan dengan penuh tanggung jawab, kualitas tinggi, dan tentunya sesuai deadline. Lihat berbagai kategori layanan kami di bawah ini!
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+      
+      <!-- Joki Poster -->
+      <div class="bg-white p-8 rounded-xl shadow-md border border-blue-200 hover:shadow-xl transition duration-300">
+        <h4 class="text-2xl font-semibold mb-3">🎨 Joki Desain Poster Estetik</h4>
+        <p class="text-gray-700 mb-2">Kami membantu kamu membuat desain poster yang estetik, kreatif, dan sesuai tema. Desain akan menyesuaikan dengan tugas sekolah atau kebutuhan acara, lengkap dengan komposisi warna, elemen grafis, dan teks yang menarik.</p>
+        <p class="text-gray-700 mb-2">Sangat cocok untuk tugas seperti presentasi, mading kelas, pameran sekolah, atau lomba desain. Kamu bisa kirim referensi atau ide, dan kami akan bantu visualisasikan dengan hasil yang memukau.</p>
+        <p class="text-gray-500 text-sm">File dikirim dalam format JPG/PNG siap cetak dan upload.</p>
+      </div>
+
+      <!-- Joki Makalah -->
+      <div class="bg-white p-8 rounded-xl shadow-md border border-blue-200 hover:shadow-xl transition duration-300">
+        <h4 class="text-2xl font-semibold mb-3">📝 Joki Pengerjaan Makalah</h4>
+        <p class="text-gray-700 mb-2">Pusing dengan tugas makalah yang harus rapi dan ilmiah? Kami bisa bantu menyusun makalah lengkap, mulai dari cover, daftar isi, isi materi hingga daftar pustaka, semuanya sesuai struktur akademik yang benar.</p>
+        <p class="text-gray-700 mb-2">Makalah kami mencakup riset ringan, bahasa formal, dan bisa disesuaikan dengan instruksi guru. Kamu tinggal duduk santai, kami yang kerjakan!</p>
+        <p class="text-gray-500 text-sm">Disediakan dalam format Word & PDF, cocok untuk tugas semua mata pelajaran.</p>
+      </div>
+
+      <!-- Joki Desain Baju & Logo -->
+      <div class="bg-white p-8 rounded-xl shadow-md border border-blue-200 hover:shadow-xl transition duration-300">
+        <h4 class="text-2xl font-semibold mb-3">👕 Joki Desain Baju & Logo</h4>
+        <p class="text-gray-700 mb-2">Ingin desain seragam kelas yang beda dari yang lain? Atau butuh logo keren untuk kelompok belajar atau project tugas? Kami bantu wujudkan desainmu dengan tampilan yang kreatif dan profesional.</p>
+        <p class="text-gray-700 mb-2">Desain bisa menyesuaikan warna kesukaan, tema kegiatan, dan filosofi kelompok. Kami pastikan hasilnya eye-catching dan siap cetak, baik untuk sablon maupun digital printing.</p>
+        <p class="text-gray-500 text-sm">Hasil dikirim dalam format PNG transparan, JPG, atau PDF sesuai kebutuhan.</p>
+      </div>
+
+      <!-- Joki Website Frontend -->
+      <div class="bg-white p-8 rounded-xl shadow-md border border-blue-200 hover:shadow-xl transition duration-300">
+        <h4 class="text-2xl font-semibold mb-3">💻 Joki Pembuatan Website Frontend</h4>
+        <p class="text-gray-700 mb-2">Kamu punya tugas membuat tampilan website tapi belum paham HTML atau Tailwind CSS? Serahkan pada kami! Kami akan membuatkan website dengan desain modern, responsif, dan rapi sesuai dengan brief kamu.</p>
+        <p class="text-gray-700 mb-2">Cocok untuk tugas sekolah, event digital, portofolio, atau presentasi. Desain kami selalu mobile-friendly, ringan diakses, dan bisa kamu unggah ke GitHub atau Netlify jika dibutuhkan.</p>
+        <p class="text-gray-500 text-sm">File diberikan dalam bentuk HTML + Tailwind, dan bisa request warna/tema khusus.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- tester -->
+<section class="py-20 bg-white text-gray-800" id="testi">
+  <div class="container mx-auto px-6 md:px-16 text-center">
+    <h3 class="text-4xl font-bold mb-6">Apa Kata Mereka Tentang Jokiin?</h3>
+    <p class="text-gray-600 mb-12 max-w-2xl mx-auto text-lg">
+      Kami berkomitmen untuk memberikan layanan terbaik. Nantikan testimoni-testimoni dari siswa yang sudah merasakan kemudahan bersama Jokiin!
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+        <p class="text-lg italic text-gray-700 mb-4">"Segera hadir testimoni dari siswa-siswa yang terbantu oleh Jokiin. Nantikan ulasan-ulasan positif mereka!"</p>
+        <div class="font-semibold text-blue-700">Nama Pelanggan 1</div>
+        <div class="text-sm text-gray-500">Sekolah/Jurusan (Opsional)</div>
+      </div>
+
+      <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+        <p class="text-lg italic text-gray-700 mb-4">"Pengalaman luar biasa menanti Anda. Kami siap membantu tugas-tugas Anda dengan hasil terbaik!"</p>
+        <div class="font-semibold text-blue-700">Nama Pelanggan 2</div>
+        <div class="text-sm text-gray-500">Sekolah/Jurusan (Opsional)</div>
+      </div>
+
+      <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 hidden lg:block">
+        <p class="text-lg italic text-gray-700 mb-4">"Percayakan tugas Anda kepada profesional. Kualitas terjamin, Anda fokus belajar!"</p>
+        <div class="font-semibold text-blue-700">Nama Pelanggan 3</div>
+        <div class="text-sm text-gray-500">Sekolah/Jurusan (Opsional)</div>
+      </div>
+    </div>
+
+    <p class="mt-12 text-gray-700 text-lg">
+      Jadilah bagian dari kesuksesan kami! Setelah tugasmu selesai, jangan ragu untuk <a href="https://wa.me/6281385656803" target="_blank" class="text-blue-700 hover:underline font-semibold">berikan ulasanmu di sini</a>.
+    </p>
+  </div>
+</section>
+
+<section id="harga" class="py-24 bg-white text-gray-800">
+  <div class="container mx-auto px-6 md:px-16 text-center">
+    <h3 class="text-4xl font-bold mb-8">Paket Harga Joki Tugas</h3>
+    <p class="text-gray-600 mb-16 max-w-2xl mx-auto text-lg">
+      Kami menyediakan berbagai layanan joki tugas dengan harga terjangkau dan kualitas terbaik. Semua dikerjakan dengan penuh tanggung jawab dan ketelitian oleh kami.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      
+      <!-- Poster -->
+      <div class="bg-blue-50 p-8 rounded-xl shadow-md border border-blue-200 hover:shadow-xl transition duration-300 min-h-[480px] flex flex-col justify-between">
+        <div>
+          <h4 class="text-2xl font-semibold mb-2">🎨 Desain Poster</h4>
+          <p class="text-gray-600 mb-4 text-left">Kami membantu kamu membuat desain poster yang menarik, estetik, dan sesuai dengan tema tugas. Cocok untuk lomba, presentasi, mading sekolah, maupun tugas individu.</p>
+          <div class="text-xl font-bold text-blue-700 mb-4">Mulai dari Rp10.000</div>
+          <ul class="text-left text-sm text-gray-700 space-y-2">
+            <li>✅ Desain kreatif sesuai brief</li>
+            <li>✅ File JPG/PNG berkualitas tinggi</li>
+            <li>✅ Bisa revisi minor 1x</li>
+            <li>✅ Estimasi pengerjaan: 3 hari</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/6281385656803" target="_blank"
+           class="mt-6 bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition duration-300 hover:bg-blue-900">
+          Pesan Sekarang
+        </a>
+      </div>
+
+      <!-- Makalah -->
+      <div class="bg-blue-50 p-8 rounded-xl shadow-md border border-blue-200 hover:shadow-xl transition duration-300 min-h-[480px] flex flex-col justify-between">
+        <div>
+          <h4 class="text-2xl font-semibold mb-2">📝 Makalah Sekolah</h4>
+          <p class="text-gray-600 mb-4 text-left">Dapatkan makalah lengkap dengan struktur yang benar, bahasa formal, dan referensi sesuai standar sekolah. Cocok untuk tugas individu maupun kelompok.</p>
+          <div class="text-xl font-bold text-blue-700 mb-4">Mulai dari Rp10.000</div>
+          <ul class="text-left text-sm text-gray-700 space-y-2">
+            <li>✅ 3–8 halaman isi (Word & PDF)</li>
+            <li>✅ Ada cover, daftar isi, dan daftar pustaka</li>
+            <li>✅ Revisi ringan gratis</li>
+            <li>✅ Estimasi pengerjaan: 1–3 hari</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/6281385656803" target="_blank"
+           class="mt-6 bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition duration-300 hover:bg-blue-900">
+          Pesan Sekarang
+        </a>
+      </div>
+
+      <!-- Website -->
+      <div class="bg-blue-50 p-8 rounded-xl shadow-md border border-blue-200 hover:shadow-xl transition duration-300 min-h-[480px] flex flex-col justify-between">
+        <div>
+          <h4 class="text-2xl font-semibold mb-2">💻 Website Frontend</h4>
+          <p class="text-gray-600 mb-4 text-left">Tugas membuat website terasa sulit? Serahkan ke kami! Website akan dibuat responsif, estetik, dan sesuai permintaanmu. Cocok untuk tugas IT, promosi event, maupun portofolio pribadi.</p>
+          <div class="text-xl font-bold text-blue-700 mb-4">Mulai dari Rp65.000</div>
+          <ul class="text-left text-sm text-gray-700 space-y-2">
+            <li>✅ HTML, Tailwind CSS (tanpa backend)</li>
+            <li>✅ Desain responsif dan mobile-friendly</li>
+            <li>✅ Bisa custom tema & layout</li>
+            <li>✅ Estimasi pengerjaan: 2–7 hari</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/6281385656803" target="_blank"
+           class="mt-6 bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition duration-300 hover:bg-blue-900">
+          Pesan Sekarang
+        </a>
+      </div>
+
+      <!-- Slide Presentasi -->
+      <div class="bg-blue-50 p-8 rounded-xl shadow-md border border-blue-200 hover:shadow-xl transition duration-300 min-h-[480px] flex flex-col justify-between">
+        <div>
+          <h4 class="text-2xl font-semibold mb-2">📊 Slide Presentasi</h4>
+          <p class="text-gray-600 mb-4 text-left">Tugas presentasi PowerPoint kamu akan jadi lebih menarik dengan desain visual modern, ringkasan isi yang jelas, dan animasi profesional (jika dibutuhkan).</p>
+          <div class="text-xl font-bold text-blue-700 mb-4">Mulai dari Rp10.000</div>
+          <ul class="text-left text-sm text-gray-700 space-y-2">
+            <li>✅ 6–10 slide PowerPoint</li>
+            <li>✅ Desain visual menarik</li>
+            <li>✅ Bisa disesuaikan tema pelajaran</li>
+            <li>✅ Estimasi pengerjaan: 2-3 hari</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/6281385656803" target="_blank"
+           class="mt-6 bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition duration-300 hover:bg-blue-900">
+          Pesan Sekarang
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="py-24 bg-white text-gray-800" id="pesan">
+  <div class="container mx-auto px-6 md:px-16 text-center">
+    <h3 class="text-4xl font-bold mb-8">Mudahnya Pesan Joki di Jokiin!</h3>
+    <p class="text-gray-600 mb-16 max-w-2xl mx-auto text-lg">
+      Cukup ikuti 4 langkah sederhana ini dan tugasmu akan segera kami kerjakan dengan cepat, rapi, dan sesuai instruksi. Kami pastikan kamu mendapatkan layanan terbaik!
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- Langkah 1 -->
+      <div class="bg-white p-8 rounded-xl shadow-md border border-blue-200 min-h-[360px] hover:shadow-lg transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="text-blue-700 text-5xl font-bold mb-4">1.</div>
+          <h4 class="text-2xl font-semibold mb-3">Hubungi Kami</h4>
+          <p class="text-gray-700 text-left">
+            Langkah pertama, hubungi kami lewat WhatsApp melalui link yang tersedia. Admin kami akan langsung merespon untuk membantu kamu.
+          </p>
+        </div>
+        <a href="https://wa.me/6281385656803" target="_blank" class="mt-6 inline-block text-blue-700 hover:text-blue-900 font-semibold">
+          Chat Sekarang!
+        </a>
+      </div>
+
+      <!-- Langkah 2 -->
+      <div class="bg-white p-8 rounded-xl shadow-md border border-blue-200 min-h-[360px] hover:shadow-lg transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="text-blue-700 text-5xl font-bold mb-4">2.</div>
+          <h4 class="text-2xl font-semibold mb-3">Jelaskan Tugasmu</h4>
+          <p class="text-gray-700 text-left">
+            Kirimkan detail lengkap tugas yang ingin dijokikan, seperti jenis tugas, materi, format file, dan deadline. Semakin jelas penjelasannya, semakin cepat kami bisa mulai kerja.
+          </p>
+        </div>
+      </div>
+
+      <!-- Langkah 3 -->
+      <div class="bg-white p-8 rounded-xl shadow-md border border-blue-200 min-h-[360px] hover:shadow-lg transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="text-blue-700 text-5xl font-bold mb-4">3.</div>
+          <h4 class="text-2xl font-semibold mb-3">Konfirmasi & Bayar</h4>
+          <p class="text-gray-700 text-left">
+            Setelah admin memberi rincian harga & waktu pengerjaan, kamu bisa konfirmasi dan melakukan pembayaran. Kami akan segera mulai tugasmu setelah pembayaran diterima.
+          </p>
+        </div>
+      </div>
+
+      <!-- Langkah 4 -->
+      <div class="bg-white p-8 rounded-xl shadow-md border border-blue-200 min-h-[360px] hover:shadow-lg transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="text-blue-700 text-5xl font-bold mb-4">4.</div>
+          <h4 class="text-2xl font-semibold mb-3">Tugas Selesai!</h4>
+          <p class="text-gray-700 text-left">
+            Kami akan mengerjakan tugasmu dengan maksimal dan mengirimkan hasilnya sesuai waktu yang disepakati. Kamu tinggal terima beres! Jangan lupa beri ulasan ya 😉
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <button id="scrollTopBtn" class="fixed bottom-6 right-6 bg-blue-700 hover:bg-blue-800 text-white p-3 rounded-full shadow-lg hidden z-50">
+  ↑
+</button>
+
+  <footer class="bg-gray-900 text-white">
+  <div class="container mx-auto px-6 md:px-16 py-12">
+    <div class="flex flex-col md:flex-row justify-between items-start gap-10">
+      
+      <div class="max-w-md">
+        <img  class="w-24 mb-5" src="JokiinPng.png" alt="">
+        <p class="text-gray-400 text-sm">
+          Jokiin adalah layanan joki tugas yang siap bantu kamu menyelesaikan berbagai jenis tugas dengan cepat, rapi, dan pastinya terpercaya. Mulai dari desain poster, makalah, sampai frontend website — semuanya dikerjakan dengan kualitas terbaik.
+        </p>
+        <p class="text-gray-400 text-sm mt-4">
+          Fokus kami adalah memberikan kemudahan buat kamu yang sedang sibuk, dikejar deadline, atau butuh hasil yang lebih maksimal. Kami hadir biar kamu bisa lebih santai tanpa harus stres mikirin tugas!
+        </p>
+      </div>
+
+      <div>
+        <h5 class="text-lg font-semibold mb-4">Layanan Jokiin</h5>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li>✔️ Desain Poster Estetik</li>
+          <li>✔️ Pengerjaan Makalah</li>
+          <li>✔️ Pembuatan Website (Frontend)</li>
+          <li>✔️ Desain Konten & Slide Presentasi</li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 class="text-lg font-semibold mb-4">Connect with Us</h5>
+        <div class="flex flex-col space-y-2 text-sm text-gray-300">
+          <a href="https://wa.me/6281385656803" target="_blank" class="hover:text-green-400 transition">
+            <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+          </a>
+          <a href="https://www.instagram.com/ackerman.js" target="_blank" class="hover:text-pink-400 transition">
+            <i class="fab fa-instagram mr-2"></i> Instagram
+          </a>
+          <a href="https://github.com/arief-png" target="_blank" class="hover:text-gray-300 transition">
+            <i class="fab fa-github mr-2"></i> GitHub
+          </a>
+          <a href="https://www.tiktok.com/@" target="_blank" class="hover:text-white transition">
+            <i class="fab fa-tiktok mr-2"></i> TikTok
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 border-t border-gray-700 pt-6 text-sm text-gray-500 text-center">
+      &copy; 2025 Jokiin. All rights reserved. | Powered with 💻 by JokiTugas Team
+    </div>
+  </div>
+</footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
